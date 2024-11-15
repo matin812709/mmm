@@ -56,6 +56,9 @@
 </head>  
 <body>  
     <header>  
+        <img src="Downloads/qRtRBvQqXzB4iTiGTeyy-700X0" alt="لوگوی باشگاه استقلال" style="width: 150px;">
+
+        
         <img src="" alt="" style="width: 150px;">  
         <h1>باشگاه استقلال</h1>  
         <p>&#9829; اخبار جدید</p>  
@@ -71,7 +74,32 @@
             <p>بازی بعدی ابی ها</p>  
             <button onclick="loadNews()">بازی بعدی</button>  
         </div>  
-    </div>  
+    </div> 
+    <div class="news-item">
+        <h2>اخبار ورزشی</h2>
+        <p>بازی بعدی ابی ها</p>
+        <form id="login-form">
+            <label for="password">رمز عبور:</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">ورود</button>
+        </form>
+    </div>
+    <script>
+        // پسورد پیش‌فرض (بهتر است این مقدار به صورت ایمن ذخیره شود)
+        const password = "ss";
+    
+        const loginForm = document.getElementById('login-form');
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const enteredPassword = document.getElementById('password').value;
+    
+            if (enteredPassword === password) {
+                window.location.href = "game.html";
+            } else {
+                alert('رمز عبور اشتباه است');
+            }
+        });
+    </script>
 
     <footer>  
         <p>تمامی حقوق محفوظ است &copy; 2024</p>  
