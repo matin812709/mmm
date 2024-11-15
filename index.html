@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html lang="fa">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>باشگاه استقلال</title>  
+    <style>  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: #e0e0e0;  
+        }  
+        header {  
+            background-color: #0033cc;  
+            color: #fff;  
+            padding: 10px 0;  
+            text-align: center;  
+        }  
+        nav {  
+            background-color: #0044dd;  
+            overflow: hidden;  
+        }  
+        nav a {  
+            float: right;  
+            display: block;  
+            color: #fff;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }  
+        nav a:hover {  
+            background-color: #0055ee;  
+        }  
+        .content {  
+            padding: 20px;  
+            display: flex;  
+            flex-wrap: wrap;  
+            justify-content: space-around;  
+        }  
+        .news-item {  
+            background-color: #fff;  
+            margin-bottom: 20px;  
+            padding: 15px;  
+            border-radius: 5px;  
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+            width: 300px;   
+            text-align: center;  
+        }  
+        footer {  
+            background-color: #333;  
+            color: #fff;  
+            text-align: center;  
+            padding: 10px 0;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <header>  
+        <img src="" alt="" style="width: 150px;">  
+        <h1>باشگاه استقلال</h1>  
+        <p>&#9829; اخبار جدید</p>  
+    </header>  
+
+    <nav>  
+        <a href="game.html">تماس با ما</a>  
+    </nav>  
+
+    <div class="content">  
+        <div class="news-item">  
+            <h2>اخبار ورزشی</h2>  
+            <p>بازی بعدی ابی ها</p>  
+            <button onclick="loadNews()">بازی بعدی</button>  
+        </div>  
+    </div>  
+
+    <footer>  
+        <p>تمامی حقوق محفوظ است &copy; 2024</p>  
+        <p>09198003918</p>  
+    </footer>  
+
+    <script>  
+        function loadNews() {  
+            window.location.href = "game.html"; // انتقال به صفحه بازی بعدی  
+        }  
+    </script>  
+</body>  
+</html>
